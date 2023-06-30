@@ -6,6 +6,7 @@
     <title>Bootstrap demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css" />
+    <script type="text/javascript" src="script.js"></script>
   </head>
   <body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
@@ -44,29 +45,29 @@
         </div>
         <div class="input-group">
           <span class="input-group-text">Gäste Name:</span>
-          <input type="text" aria-label="First name" placeholder="Vorname" class="form-control">
-          <input type="text" aria-label="Last name" placeholder="Nachname" class="form-control">
+          <input type="text" aria-label="First name" placeholder="Vorname" class="form-control" id="fname">
+          <input type="text" aria-label="Last name" placeholder="Nachname" class="form-control" id="lname">
         </div>
         <br>
         <div class="input-group">
           <span class="input-group-text">Adresse:</span>
-          <input type="text" aria-label="First name" placeholder="Straße" class="form-control">
-          <input type="text" aria-label="Last name" placeholder="Hausnummer" class="form-control">
+          <input type="text" aria-label="Straße" placeholder="Straße" class="form-control" id="str">
+          <input type="text" aria-label="hausnummer" placeholder="Hausnummer" class="form-control" id="hnr">
         </div>
         <div class="input-group">
-          <input type="text" aria-label="First name" placeholder="Ort" class="form-control">
-          <input type="text" aria-label="Last name" placeholder="Postleitzahl" class="form-control">
+          <input type="text" aria-label="Ort" placeholder="Ort" class="form-control" id="place">
+          <input type="text" aria-label="Postleitzahl" placeholder="Postleitzahl" class="form-control" id="plz">
         </div>
         <br>
         <div class="input-group">
           <span class="input-group-text">Buchungszeitraum:</span>
           <span class="input-group-text">von</span>
-          <input type="text" aria-label="First name" placeholder="dd-mm-yyyy" class="form-control">
+          <input type="text" aria-label="Anreise" placeholder="dd-mm-yyyy" class="form-control" id="date_a">
           <span class="input-group-text">bis</span>
-          <input type="text" aria-label="Last name" placeholder="dd-mm-yyyy" class="form-control">
+          <input type="text" aria-label="Abreise" placeholder="dd-mm-yyyy" class="form-control" id="date_b">
         </div>
         <br>
-        <select class="form-select" aria-label="Default select example">
+        <select class="form-select" aria-label="Default select example" id="pet">
           <option selected>Haustiere</option>
           <option value="y">Ja</option>
           <option value="n">Nein</option>
@@ -75,7 +76,7 @@
         <div class="row align-items">
           <div class="col-5">
             <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <input class="form-check-input" type="checkbox" value="" id="data">
               <label class="form-check-label" for="flexCheckDefault">
                 Datenschutzerklärung gelesen
               </label>
@@ -86,7 +87,7 @@
         <br>
         <div class="row">
           <div class="col-2">
-            <button class="btn btn-primary" type="submit">Buchen</button>
+            <button class="btn btn-primary" type="submit" onclick="handleSubmit()">Buchen</button>
           </div>
           <div class="col"></div>
         </div>
