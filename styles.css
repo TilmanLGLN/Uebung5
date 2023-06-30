@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+}
+
+body{
+  color: #00ADB5;
+  background-color: #393E46;
+}
+
+main{
+  margin-top: 75px;
+}
+
+footer{
+  color: #222831;
+  background-color: #EEEEEE
+}
+
+.navbar-recolor{
+  color: #393E46;
+  background-color: #00ADB5 !important;
+}
